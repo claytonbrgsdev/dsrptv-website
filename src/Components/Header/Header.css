@@ -1,0 +1,50 @@
+/* Header.css */
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 5px 10px 20px rgba(47, 22, 85, 0.7); /* Less intense shadow */
+    }
+    50% {
+      transform: scale(1.03);
+      box-shadow: 1px 1px 43px rgb(0, 0, 0); /* More intense shadow */
+    }
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    padding-top: 10px; /* Adjust this value as necessary */
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    border-radius: 200px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: pulse 30s infinite;
+    border: 5px solid black;
+}
+
+.header-logo {
+    max-width: 150px;
+    margin-top: 40px;
+    border-radius: 100px;
+    border:1px solid #ffffff;
+    animation: pulse 5.5s infinite; /* Ensure the duration matches the .header-container */
+}
+
+.header-text {
+    margin-top: 10px;
+    padding: 10px;
+    font-style: italic;
+    font-family: "monospace";
+    color: #ffffff;
+    background-color: rgb(52, 51, 51);
+    font-weight: 1;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgb(216, 156, 226);
+    animation: pulse 5.5s infinite; /* Ensure the duration matches the .header-container */
+    border: 1px solid ;
+}
